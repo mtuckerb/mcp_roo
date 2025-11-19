@@ -1,0 +1,39 @@
+{
+  "name": "@mtuckerb/mcp-roo",
+  "version": "1.0.0",
+  "description": "MCP server for communicating with Proofessor AI agent in Roo Cloud",
+  "type": "module",
+  "bin": {
+    "mcp-roo": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtuckerb/mcp_roo.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "roo",
+    "ai-agent",
+    "proofessor"
+  ],
+  "author": "mtuckerb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtuckerb/mcp_roo/issues"
+  },
+  "homepage": "https://github.com/mtuckerb/mcp_roo#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  }
+}
